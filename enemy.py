@@ -1,6 +1,8 @@
 class Enemy:
     def __init__(self, type_of):
         self.type_of = type_of
+        self.life = life
+        self.attack_power = attack_power
         
 
     def attack(self):
