@@ -9,7 +9,6 @@ TextFunctions.intro()
 
 if input() == '':
     os.system('cls')
-    winsound.PlaySound(r'Exploring.wav', winsound.SND_LOOP + winsound.SND_ASYNC)
     TextFunctions.loading()
     time.sleep(5)
 
@@ -40,6 +39,7 @@ if input() == '':
             TextFunctions.please_choose()
             continue
 
+    winsound.PlaySound(r'Exploring.wav', winsound.SND_LOOP + winsound.SND_ASYNC)
     os.system('cls')
     TextFunctions.choose_path()
     while True:
